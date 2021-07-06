@@ -1,0 +1,100 @@
+html{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+body{
+  display: flex;
+  background-color: #C6EBBE;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+}
+
+.container{
+width: 500px;
+height: 230px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+/*.button {
+  width:500px ;
+  height: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+.load {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #38369A;
+  box-shadow: 0px 4px 0px 0px rgba(10, 14, 113, 1);
+  border:none;
+  padding: 0;
+  border-width: 0;
+}
+
+/*.text-load {
+  color: #BCD4DF;
+  font-family: 'Rubik Mono One', sans-serif;
+}*/
+
+.text-box{
+width: 500px;
+height: 130px;
+}
+
+.text {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #020887;
+  text-shadow: 0px 4px 0px #B7B7B7;
+}
+
+.button {
+  width: 500px;
+  height: 100px;
+  position: relative;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+ 
+.text-load {
+  line-height: 1;
+  margin-top: 1px;
+  color: #BCD4DF;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 30px;
+}
+ 
+.input__file-button {
+  width: 300px;
+  max-width: 290px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #38369A;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 0px 0px rgba(10, 14, 113, 1);
+}
