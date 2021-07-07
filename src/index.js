@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-undef */
 /* eslint-disable max-len */
 /* eslint-disable func-names */
@@ -18,7 +19,9 @@ const createWindow = () => {
     height: 800,
     icon: `${__dirname}/flow-icon.ico`,
   });
-  mainWindow.setMenuBarVisibility(false);
+
+  // mainWindow.setMenuBarVisibility(false);
+  // eslint-disable-next-line no-use-before-define
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
@@ -28,6 +31,7 @@ const createWindow = () => {
     mainWindow = null;
   });
 };
+
 
 app.on('ready', createWindow);
 
