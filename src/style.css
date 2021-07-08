@@ -87,10 +87,5 @@ body {
 
 textarea {
   display: flex;
-  /*flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: center;
-  */
+  width: 200px;
 }
