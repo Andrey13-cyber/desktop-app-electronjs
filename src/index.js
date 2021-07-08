@@ -17,7 +17,7 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 800,
-    icon: `${__dirname}/flow-icon.ico`,
+    icon: `${__dirname}img/flow-icon.ico`,
   });
 
   // mainWindow.setMenuBarVisibility(false);
