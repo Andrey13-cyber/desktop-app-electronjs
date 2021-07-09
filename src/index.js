@@ -15,10 +15,12 @@ let mainWindow;
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 800,
+    show: false,
     icon: `${__dirname}/img/flow-icon.ico`,
   });
+
+  mainWindow.maximize();
+  mainWindow.show();
 
   // mainWindow.setMenuBarVisibility(false);
   // eslint-disable-next-line no-use-before-define
