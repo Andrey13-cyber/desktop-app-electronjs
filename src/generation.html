@@ -8,25 +8,40 @@
   <header class="header">
     <div class="menu-editor">
       <div class="btn-menu-editor">
-        <p class="text-btn-menu-editor">LOAD FIlE</p>
+        <button class="text-btn-menu-editor" type="file">LOAD FIlE</button>
       </div>
       <div class="btn-menu-editor">
-        <p class="text-btn-menu-editor">SAVE FIlE</p>
+        <button class="text-btn-menu-editor">SAVE FIlE</button>
       </div>
     </div>
     <div class="menu-graphic-editor">
-      <div class="btn-menu-graphic-editor">
-        <p class="text-btn-menu-grapgic-editor">FIGURE</p>
+      <div class="dropdown">
+        <button class="dropbtn">FIGURE</button>
+        <div class="dropdown-content">
+          <a href="#">Rectangle</a>
+          <a href="#">Triangle</a>
+          <a href="#">Cyrcle</a>
+          <a href="#">Romb</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">LINE</button>
+        <div class="dropdown-content">
+          <a href="#">Line</a>
+          <a href="#">Arrow</a>
+        </div>
       </div>
       <div class="btn-menu-graphic-editor">
-        <p class="text-btn-menu-grapgic-editor">NODE</p>
+        <button class="text-btn-menu-graphic-editor" >TEXT</button>
+      </div>
+      <div class="btn-menu-graphic-editor">
+        <button class="text-btn-menu-graphic-editor">DELETE</button>
       </div>
     </div>
   </header>
   <main class="container">
     <div class="main-contain">
-      <div class="text_area_element" contenteditable>
-        <textarea class="text-block"></textarea>
+      <div id="editor" contenteditable="true" type="text">
       </div>
       <div class="blocks">
       </div>
@@ -37,5 +52,6 @@
       </button>
     </div>
   </main>
+  <script src="editor_script.js"></script>
 </body>
 </html>
