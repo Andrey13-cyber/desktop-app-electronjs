@@ -26,8 +26,6 @@ body {
 .btn-menu-graphic-editor {
   height: 100%;
   width: 100px;
-  /*background-color: aliceblue;*/
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,45 +64,25 @@ body {
 
 .main-contain {
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#draggable {
+  width: 600px;
+  height: 400px;
+  background: rgb(31, 156, 94);
+  border: none;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 #editor {
-  width: 50%;
-  height: 100%;
-  outline: none;
-  /*background-color: rgb(41, 36, 35);*/
-  /*background-color: #e0b819;*/
-  background-color: #38369a;
-  color: rgb(101, 186, 209);
-  font-family: monospace;
-  text-indent: 10px;
-}
-
-.text-block {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.blocks {
-  width: 50%;
-  height: 100%;
-  /*background-color: rgb(58, 47, 48);*/
-  /*background-color: #bf19e0;*/
-  background-color: #7ca5b8;
-}
-
-.button {
-  width: 100%;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 590px;
+  height: 390px;
 }
 
 .dropbtn {
@@ -153,21 +131,4 @@ body {
   height: 100%;
   border: none;
   background-color: #c6ebbe;
-}
-
-#btn-generation {
-  width: 250px;
-  height: 130px;
-  border: none;
-  padding: 0;
-  border-radius: 45px;
-}
-
-#btn-generation:hover {
-  background-color: rgb(197, 101, 101);
-}
-
-.text-generation {
-  margin: 0 auto;
-  font-size: 30px;
 }
