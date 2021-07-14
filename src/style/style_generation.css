@@ -26,11 +26,8 @@ body {
 .btn-menu-graphic-editor {
   height: 100%;
   width: 100px;
-<<<<<<< HEAD
-=======
   background-color: aliceblue;
 
->>>>>>> 971c03240e9b386bdfc3f780f1bcf9889476b105
   display: flex;
   align-items: center;
   justify-content: center;
