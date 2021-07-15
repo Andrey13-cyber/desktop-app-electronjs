@@ -5,10 +5,8 @@ btn_load_file.addEventListener('click', function() {
     input_btn.click()
 })
 
-$(document).ready(function() {
-    $("#load-btn").click(function() {
-        $("#editor").load("test.txt", function(){
-            alert("Done Loading");
-        });
-   }); 
-}); 
+let rec = document.getElementById('btn-rec')
+
+rec.addEventListener('click', function() {
+    Add()
+})

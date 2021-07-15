@@ -23,7 +23,7 @@
       <div class="dropdown">
         <button class="dropbtn">FIGURE</button>
         <div class="dropdown-content">
-          <a href="#">Rectangle</a>
+          <a id="btn-rec" href="#">Rectangle</a>
           <a href="#">Triangle</a>
           <a href="#">Cyrcle</a>
           <a href="#">Romb</a>
@@ -46,16 +46,18 @@
   </header>
   <main class="container">
     <div class="main-contain">
+      <canvas id="canvas" width="1280" height="800">
+      </canvas>
       <div id="draggable" class="ui-widget-content">
         <div id="editor">
         </div>
-      </div>
-      <div id="canvas">
       </div>
     </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <script src="fabric.js"></script>
+  <script src="btn_script.js"></script>
   <script src="btn_generation_page.js"></script>
   <script src="draggable.js"></script>
   <script src="ace-builds/src-noconflict/ace.js"></script>
