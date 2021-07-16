@@ -86,6 +86,7 @@ body {
 #editor {
   width: 590px;
   height: 390px;
+  z-index: 1;
 }
 
 #canvas {
