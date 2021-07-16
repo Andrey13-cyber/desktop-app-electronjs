@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style_generation.css">
+</head>
+<body>
+  <main class="container">
+    <div class="textareaElement" contenteditable>
+      <textarea style="overflow:hidden;" class="text-block"></textarea>
+    </div>
+  
+    <div class="button">
+      <label for="input__file" class="input__file-button"></label>
+        <input name="gen" type="generate" name="file" id="input__file" class="input input__file" multiple>
+        <span class="text-load">GENERATION</span>
+      </label>
+    </div>
+  </main>
+</body>
+</html>
