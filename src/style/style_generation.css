@@ -87,11 +87,14 @@ body {
   width: 590px;
   height: 390px;
   z-index: 1;
+<<<<<<< HEAD
 }
 
 #canvas {
   width: 100%;
   height: 100%;
+=======
+>>>>>>> 20f4148df382cb1c7423587d5ca93f56d61bcc22
 }
 
 .dropbtn {
