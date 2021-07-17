@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style_generation.css">
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/overcast/jquery-ui.css">
+</head>
+<body>
+  <header class="header">
+    <div class="menu-editor">
+      <div class="btn-menu-editor">
+        <button id="load-btn" class="text-btn-menu-editor">LOAD FILE</button>
+        <input id="file-input" type="file" name="name" style="display: none;">
+      </div>
+      <div class="btn-menu-editor">
+        <button id="save-btn" class="text-btn-menu-editor">SAVE FILE</button>
+        <input id="file-output" type="file" name="name" style="display: none;">
+      </div>
+      <div class="btn-menu-editor">
+        <button class="text-btn-menu-editor">GENERATION</button>
+      </div>
+    </div>
+    <div class="menu-graphic-editor">
+      <div class="dropdown">
+        <button class="dropbtn">FIGURE</button>
+        <div class="dropdown-content">
+          <a id="btn-rec" href="#">Rectangle</a>
+          <a href="#">Triangle</a>
+          <a href="#">Cyrcle</a>
+          <a href="#">Romb</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">LINE</button>
+        <div class="dropdown-content">
+          <a href="#">Line</a>
+          <a href="#">Arrow</a>
+        </div>
+      </div>
+      <div class="btn-menu-graphic-editor">
+        <button class="text-btn-menu-graphic-editor" >TEXT</button>
+      </div>
+      <div class="btn-menu-graphic-editor">
+        <button class="text-btn-menu-graphic-editor">DELETE</button>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="main-contain">
+      <canvas id="canvas" width="1280" height="800">
+      </canvas>
+      <div id="draggable" class="ui-widget-content">
+        <div id="editor">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <script src="fabric.js"></script>
+  <script src="btn_script.js"></script>
+  <script src="btn_generation_page.js"></script>
+  <script src="draggable.js"></script>
+  <script src="ace-builds/src-noconflict/ace.js"></script>
+  <script src="ace_editor.js"></script>
+</body>
+</html>
