@@ -14,20 +14,93 @@ fabric.Object.prototype.transparentCorners = false;
 fabric.Object.prototype.cornerColor = 'blue';
 fabric.Object.prototype.cornerStyle = 'circle';
 
-function Add() {
-var rect = new fabric.Rect({
-  left: 100,
-  top: 50,
-  fill: 'yellow',
-  width: 200,
-  height: 100,
-  objectCaching: false,
-  stroke: 'lightgreen',
-  strokeWidth: 4,
-});
+function Add(figure) {
+    if(figure == 1){
+    var rect = new fabric.Rect({
+      left: 100,
+      top: 100,
+      fill: 'white',
+      width: 100,
+      height: 50,
+      objectCaching: false,
+      stroke: 'black',
+      strokeWidth: 2,
+    });
+    canvas.add(rect);
+  canvas.setActiveObject(rect);
+  }
 
-canvas.add(rect);
-canvas.setActiveObject(rect);
+    if(figure == 2){
+    var ellipse = new fabric.Ellipse({
+        left: 100,
+        top: 200,
+        rx: 60,
+        ry: 20,
+        fill: 'white',
+        stroke: 'black',
+        strokeWidth: 2,
+        objectCaching: false,
+      });
+      canvas.add(ellipse);
+    canvas.setActiveObject(ellipse);
+    }
+    
+
+    if(figure == 3){
+    var polyHEX = new fabric.Polygon([
+        { x: 60, y: 20 },
+        { x: 110, y: 40 },
+        { x: 110, y: 80},
+        { x: 60, y: 100},
+        { x: 10, y: 80 },
+        { x: 10, y: 40 },], {
+            fill: 'white',
+            stroke: 'black',
+            strokeWidth: 2,
+            top: 100,
+            left: 200,
+            objectCaching: false,
+        });
+      canvas.add(polyHEX);
+    canvas.setActiveObject(polyHEX);
+    }
+    
+
+    if(figure == 4) {
+    var polyROMB = new fabric.Polygon([
+        { x: 50, y: 20 },
+        { x: 20, y: 50 },
+        { x: 50, y: 80},
+        { x: 80, y: 50},], {
+          fill: 'white',
+          stroke: 'black',
+          strokeWidth: 2,
+          left: 200,
+          top: 200,
+          objectCaching: false,
+      });
+      canvas.add(polyROMB);
+    canvas.setActiveObject(polyROMB);
+    }
+    
+
+    if(figure == 5) {
+    var paral = new fabric.Polygon([
+      { x: 50, y: 20 },
+        { x: 20, y: 50 },
+        { x: 50, y: 80},
+        { x: 80, y: 50},],{
+          fill: 'white',
+          stroke: 'black',
+          strokeWidth: 2,
+          left: 100,
+          top: 300,
+          objectCaching: false,
+
+      });
+      canvas.add(paral);
+    canvas.setActiveObject(paral);
+    }  
 }
 
 function renderIcon(icon) {
@@ -63,7 +136,6 @@ render: renderIcon(cloneImg),
 cornerSize: 24
 });
 
-Add();
 
 function deleteObject(eventData, transform) {
             var target = transform.target;

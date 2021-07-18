@@ -72,6 +72,10 @@ body {
   justify-content: space-between;
 }
 
+.canvas-container {
+  left: 600px;
+}
+
 #draggable {
   width: 600px;
   height: 400px;
