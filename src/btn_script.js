@@ -86,7 +86,7 @@ function Add(figure) {
 
     if(figure == 5) {
     var paral = new fabric.Polygon([
-      { x: 50, y: 20 },
+        { x: 50, y: 20 },
         { x: 20, y: 50 },
         { x: 50, y: 80},
         { x: 80, y: 50},],{
